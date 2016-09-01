@@ -42,7 +42,7 @@ export default {
   context: srcDir,
   entry: {
     app: [
-      'eventsource-polyfill',
+      'eventsource-polyfill', // for IE
       'babel-polyfill',
       'react-hot-loader/patch',
       'client/client.js',

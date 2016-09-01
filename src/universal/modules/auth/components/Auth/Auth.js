@@ -71,7 +71,6 @@ export default class Auth extends Component {
               disabled={isAuthenticating}
               onClick={handleSubmit(this.onSubmit)}
             />
-
           </div>
         </form>
         <div className={styles.hrWithText}>

@@ -53,6 +53,7 @@ export function run(worker) {
   app.post('/graphql', jwt({secret: process.env.JWT_SECRET, credentialsRequired: false}), httpGraphQLHandler);
 
   // server-side rendering
+  app.get('/resume', (req, res) => res.send('jjj'));
   app.get('*', createSSR);
 
   // handle sockets
